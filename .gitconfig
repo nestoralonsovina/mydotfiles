@@ -1,0 +1,23 @@
+[user]
+    email = alonsovinanestor@gmail.com
+    name = nestoralonsovina
+
+[color]
+    diff = auto
+    status = auto
+    ui = auto
+
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red
+    new = green
+
+[alias]
+    pm = "!git push -u origin master"
+    c = commit -m
+    a = add
+    cob = checkout -b
+
+[push]
+    default = simple
