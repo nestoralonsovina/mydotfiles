@@ -1,7 +1,7 @@
 # Switch Ctrl Key with Caps Lock
 Preferences > Keyboard > Keyboard > Modification Keys
 
-#Font
+# Font
 Install Fira Code:
 using brew => brew tap caskroom/fonts
       brew cask install font-fira-code
