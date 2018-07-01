@@ -1,5 +1,0 @@
-Install Fira Code with: 
-using brew =>    brew tap caskroom/fonts
-                 brew cask install font-fira-code
-Set up font size to 13pt
-
