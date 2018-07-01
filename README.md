@@ -43,7 +43,7 @@ Run `git clone https://github.com/nestoralonsovina/mydotfiles.git`
 
 ## Vundle Installation
 
-`git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
+Run `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
 
 ## Install Plugins
 1. Open the .vimrc file previously downloaded using `vim .vimrc` in the home directory. (a lot of errors will appear, just press enter, we are fixing that'
