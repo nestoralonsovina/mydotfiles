@@ -4,7 +4,9 @@ Preferences > Keyboard > Keyboard > Modification Keys
 # Font
 **Install Fira Code:**
 
-using brew => brew tap caskroom/fonts
+using brew => 
+
+      brew tap caskroom/fonts
 
       brew cask install font-fira-code
 
@@ -17,7 +19,7 @@ using brew => brew tap caskroom/fonts
 ## Git
 Run `brew install git`
 
-**Note:**If Xcode Command Tools are installed then git is too. Check running `git --version`
+**Note:** If Xcode Command Tools are installed then git is too. Check running `git --version`
 ## Zsh
 Run `brew install zsh zsh-completions`
 ## Curl
