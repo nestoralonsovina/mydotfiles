@@ -32,6 +32,18 @@ Run `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zs
 
 brew install tmux
 
+## Powerline fonts
+
+::
+    # clone
+        git clone https://github.com/powerline/fonts.git --depth=1
+    # install
+        cd fonts
+        ./install.sh
+    # clean-up a bit
+        cd ..
+        rm -rf fonts
+        
 # Dowload the dotfiles
 By cloning this repository you will get all the necesary "." files for tmux, git, zsh and vim. Place them on the home folder and change the necessary paths
 
@@ -51,7 +63,6 @@ Run `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.
 3. Run `:so %`
 
 **Note:** `:so` is the shortcut for :source and `%` meand the file you are on. This way we re-run the .vimrc file without closing the terminal.
-
 
 
 

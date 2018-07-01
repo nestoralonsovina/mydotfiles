@@ -4,7 +4,7 @@
 # # Path to your oh-my-zsh installation.
 export ZSH=/Users/nestoralonsovina/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
-ZSH_THEME="agnoster"
+ZSH_THEME="robbyrussell"
 # # Uncomment the following line to use hyphen-insensitive completion. Case
 # # sensitive completion must be off. _ and - will be interchangeable.
 HYPHEN_INSENSITIVE="true"
