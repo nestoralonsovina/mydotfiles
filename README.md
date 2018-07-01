@@ -12,7 +12,7 @@ using brew =>
 
 **Note:** Set up font size to 13pt
 
-**Note:** Enable ligatures
+**Note:** Enable ligatures (only possible if you are using iTerm2)
 
 # Installations
 
@@ -33,7 +33,7 @@ Run `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zs
 brew install tmux
 
 # Dowload the dotfiles
-Cloning this repository you will get all the necesary . files for tmux, git, zsh and vim. Place them on the home folder and change the necessary paths
+By cloning this repository you will get all the necesary "." files for tmux, git, zsh and vim. Place them on the home folder and change the necessary paths
 
 **To clone this repository:**
 
@@ -43,7 +43,7 @@ Run `git clone https://github.com/nestoralonsovina/mydotfiles.git`
 
 ## Vundle Installation
 
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+`git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
 
 ## Install Plugins
 1. Open the .vimrc file previously downloaded using `vim .vimrc` in the home directory. (a lot of errors will appear, just press enter, we are fixing that'
