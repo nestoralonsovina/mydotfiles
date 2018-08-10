@@ -21,6 +21,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-markdown'
 Plug 'flazz/vim-colorschemes'
 Plug 'itchyny/vim-gitbranch'
+Plug 'pbondoer/vim-42header'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
@@ -40,7 +42,7 @@ set novb
 set nolist "This toggles on and off the newline character at the end of the line
 set noswapfile
 set number "Set line number
-set relativenumber "set line number relative to the current line
+"set relativenumber "set line number relative to the current line
 set ruler
 set scrolloff=5
 set showmatch "highlight matching braces
@@ -49,7 +51,7 @@ set showcmd
 set noshowmode
 set laststatus=2 "Necessary for lightline
 set mouse=a "Enable mouse
-
+set updatetime=100
 "highlight ColorColum ctermbg=black
 "set colorcolumn=80 "Set column at 80 char length
 
