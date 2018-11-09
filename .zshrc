@@ -20,7 +20,8 @@ alias cd..="cd .."
 alias ..="cd .."
 alias ...='cd ../..'
 alias l='ls -la'
-
+alias 42="cd /Users/nestoralonsovina/Documents/workshop/workshop/42Paris"
+alias 42FileChecker='bash ~/42FileChecker/42FileChecker.sh'
 #tmus stuff
 alias tmux="TERM=screen-256color-bce tmux"
 
