@@ -27,7 +27,7 @@ Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 " coloscheme
-colorscheme molokai
+colorscheme monokai
 
 "Basic configuration needed
 set autoindent "Automatic indentation
@@ -57,7 +57,6 @@ set updatetime=100
 
 "NerdTree configuration
 map <C-o> :NERDTreeToggle<CR>
-
 "Airline
 let g:airline_theme='dracula'
 let g:airline_powerline_foints=1

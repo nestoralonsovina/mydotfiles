@@ -1,7 +1,10 @@
 # Path to your oh-my-zsh installation
 export ZSH=/Users/nestoralonsovina/.oh-my-zsh
+export HISTSIZE=100000
+export HISTFILESIZE=100000
+export HISTFILE=~/.zhistory
 # Set name of the theme to load.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="dallas"
 # Hyphen-insensitive completion.
 HYPEN_INSENSITIVE="true"
 # Enable command auto-correction
@@ -12,6 +15,7 @@ COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="mm/dd/yyyy"
 # Plugins
 plugins=(git, zsh-256color, tmux, osx, docker)
+
 
 source $ZSH/oh-my-zsh.sh
 
@@ -26,3 +30,4 @@ alias 42FileChecker='bash ~/42FileChecker/42FileChecker.sh'
 alias tmux="TERM=screen-256color-bce tmux"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+echo export VAGRANT_HOME=~/Documents/Vagrant
