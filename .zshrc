@@ -1,5 +1,6 @@
 # Path to your oh-my-zsh installation
 export ZSH=/Users/nestoralonsovina/.oh-my-zsh
+export PATH="/Users/nestoralonsovina/anaconda3/bin:$PATH"
 export HISTSIZE=100000
 export HISTFILESIZE=100000
 export HISTFILE=~/.zhistory
@@ -15,7 +16,6 @@ COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="mm/dd/yyyy"
 # Plugins
 plugins=(git, zsh-256color, tmux, osx, docker)
-
 
 source $ZSH/oh-my-zsh.sh
 

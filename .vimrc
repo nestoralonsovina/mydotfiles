@@ -23,11 +23,14 @@ Plug 'flazz/vim-colorschemes'
 Plug 'itchyny/vim-gitbranch'
 Plug 'pbondoer/vim-42header'
 Plug 'airblade/vim-gitgutter'
+Plug 'nightsense/cosmic_latte'
 
 call plug#end()
 
 " coloscheme
-colorscheme monokai
+
+set background=dark
+colorscheme cosmic_latte
 
 "Basic configuration needed
 set autoindent "Automatic indentation
@@ -52,13 +55,14 @@ set noshowmode
 set laststatus=2 "Necessary for lightline
 set mouse=a "Enable mouse
 set updatetime=100
+set termguicolors
 "highlight ColorColum ctermbg=black
 "set colorcolumn=80 "Set column at 80 char length
 
 "NerdTree configuration
 map <C-o> :NERDTreeToggle<CR>
 "Airline
-let g:airline_theme='dracula'
+let g:airline_theme='cosmic_latte_dark'
 let g:airline_powerline_foints=1
 
 "Syntastic config
