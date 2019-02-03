@@ -30,7 +30,7 @@ call plug#end()
 " coloscheme
 
 set background=dark
-colorscheme cosmic_latte
+colorscheme badwolf
 
 "Basic configuration needed
 set autoindent "Automatic indentation
