@@ -12,10 +12,12 @@ if !has('gui_running')
 	set t_Co=256
 endif
 
+" Enable ale autocompletion, run before ale is enabled
+let g:ale_completion_enabled = 1
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree'
-Plug 'tpope/vim-markdown'
 Plug 'flazz/vim-colorschemes'
 Plug 'pbondoer/vim-42header'
 Plug 'w0rp/ale'
@@ -27,6 +29,9 @@ Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 filetype plugin on
+
+" set autocomplete thing
+set completeopt=menu,menuone,preview,noselect,noinsert
 
 " Prefer unix format for files
 set fileformats=unix,dos
@@ -87,9 +92,7 @@ set smartcase
 " Do not echo the mode, ligthline will display it instead
 set noshowmode
 
-" set shortmess=filnxtToOc  ?
-
-" Find search matcher as they are typed
+" Find search matches as they are typed
 set incsearch
 
 " Configure the delay for custom chained keybinds
@@ -111,8 +114,6 @@ let g:rainbow_conf = {
 
 " Activate the plugin
 let g:rainbow_active = 1
-
-" --- Unite.vim plugin to consider --- 
 
 " --- vim-lightline settings ---
 let g:lightline = {
@@ -136,12 +137,7 @@ let g:lightline = {
 \       ],
 \       'right': [
 \           ['lineinfo'],
-\           ['python_status', 'vim_speech', 'filetype'],
 \       ],
-\   },
-\   'component_function': {
-\       'python_status': 'python_tools#statusline#GetStatus',
-\       'vim_speech': 'vim_speech#statusline#GetStatus',
 \   },
 \}
 
@@ -152,14 +148,18 @@ let g:NERDTreeQuitOnOpen = 1
 
 let g:NERDTreeMouseMode = 3
 let g:NERDTreeMapActivateNode = '<Space>'
-map <C-o> :NERDTreeToggle<CR>
+map <C-n> :NERDTreeToggle<CR>
 
 " --- ALE settings ---
 
-let g:ale_warn_about_trainling_whitespace = 1
-let g:ale_completion_enabled = 1
-let g:ale_c_parse_makefile = 1
+" gcc options in ALE
+let g:ale_c_gcc_options = '-Wall -Wextra -Werror'
 
-" --- Clang completion settings ---
-"let g:clang_library_path='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libclang.dylib'
+" Autofixer
+let b:ale_fixers = {'*': ['remove_trailing_lines', 'trim_whitespace']}
 
+" appply fixers on save
+let g:ale_fix_on_save = 1
+
+" completion settings
+let g:ale_completion_max_suggestions = 8
