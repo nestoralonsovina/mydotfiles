@@ -1,8 +1,9 @@
 cp .vimrc ~/
-cp .vimr.bundles ~/
+cp .vimrc.bundles ~/
 cp -a .vim ~/
 
-mkdir ~/.vimr/backups
+mkdir ~/.vim
+mkdir ~/.vim/backups
 mkdir ~/.vim/swaps
 mkdir ~/.vim/undos
 
