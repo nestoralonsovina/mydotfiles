@@ -12,19 +12,15 @@ if !has('gui_running')
 	set t_Co=256
 endif
 
-" Enable ale autocompletion, run before ale is enabled
-let g:ale_completion_enabled = 1
 
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree'
 Plug 'flazz/vim-colorschemes'
 Plug 'pbondoer/vim-42header'
-Plug 'w0rp/ale'
 Plug 'justinmk/vim-syntax-extra'
 Plug 'luochen1990/rainbow'
 Plug 'itchyny/lightline.vim'
-Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 
@@ -152,14 +148,7 @@ map <C-n> :NERDTreeToggle<CR>
 
 " --- ALE settings ---
 
-" gcc options in ALE
-let g:ale_c_gcc_options = '-Wall -Wextra -Werror'
 
 " Autofixer
 let b:ale_fixers = {'*': ['remove_trailing_lines', 'trim_whitespace']}
 
-" appply fixers on save
-let g:ale_fix_on_save = 1
-
-" completion settings
-let g:ale_completion_max_suggestions = 8
