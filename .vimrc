@@ -104,7 +104,7 @@ set expandtab                  " ┘
 set ttyfast                    " Enable fast terminal connection
 set undodir=~/.vim/undos       " Set directory for undo files
 set undofile                   " Automatically save undo history
-set virtualedit=all            " Allow cursor to be anywhere
+"set virtualedit=all            " Allow cursor to be anywhere
 
 set visualbell                 " ┐
 set noerrorbells               " │ Disable beeping and window flashing
@@ -120,8 +120,6 @@ set wildmenu                   " Enable enhanced command-line
 set winminheight=0             " Allow windows to be squashed
 
 " Quicker window movement
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
