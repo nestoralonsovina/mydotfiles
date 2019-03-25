@@ -81,6 +81,9 @@ Plugin 'w0rp/ale'
 " [11] Move code 
 Plugin 'tpope/vim-unimpaired'
 
+" [12] Emmet
+Plugin 'mattn/emmet-vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -138,3 +141,7 @@ nmap <C-j> ]e
 " Move multiple lines selected
 vmap <C-k> [egv
 vmap <C-j> ]egv
+
+" [12]
+let g:user_emmet_leader_key='<c-y>'
+
