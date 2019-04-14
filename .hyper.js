@@ -141,6 +141,8 @@ module.exports = {
       'hyperterm-atom-dark',
       'hyperline',
       'hypercwd',
+      'hyperpower',
+      'gitrocket',
   ],
 
   // in development, you can create a directory under
