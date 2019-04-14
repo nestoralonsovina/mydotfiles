@@ -26,6 +26,15 @@ brew () {
     brew cleanup
 }
 
+vim () {
+    mkdir -p ~/.vim
+    mkdir -p ~/.vim/backups
+    mkdir -p ~/.vim/swaps
+    mkdir -p ~/.vim/undos
+
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+}
+
 init () {
     echo "Making a Projects folder in $PATH_TO_PROJECTS if it doesn't already exist"
     mkdir -p "$PATH_TO_PROJECTS"
@@ -67,3 +76,4 @@ install_tools () {
 init
 link
 install_tools
+vim

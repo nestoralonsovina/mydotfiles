@@ -13,6 +13,9 @@
     old = red
     new = green
 
+[url "https://github.com/"]
+	insteadOf = gh:
+
 [alias]
     cob = checkout -b
     i = init
