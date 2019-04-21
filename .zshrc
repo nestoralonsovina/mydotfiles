@@ -5,7 +5,7 @@ export HISTSIZE=100000
 export HISTFILESIZE=100000
 export HISTFILE=~/.zhistory
 
-plugins=(git, vi-mode, zsh-autosuggestions)
+plugins=(git, vi-mode)
 # Set name of the theme to load.
 ZSH_THEME="hyperzsh"
 # Hyphen-insensitive completion.
@@ -20,7 +20,7 @@ HIST_STAMPS="mm/dd/yyyy"
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.exports
-source .functions
+source $HOME/.functions
 
 
 # shortcuts

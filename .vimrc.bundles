@@ -43,6 +43,7 @@ Plugin 'gko/vim-coloresque'
 Plugin 'hashivim/vim-vagrant'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+Plugin 'justinmk/vim-syntax-extra'
 
 " [5] search filesystem with ctrl+p (this fork replaces the old unmaintained project)
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -50,6 +51,8 @@ Plugin 'ctrlpvim/ctrlp.vim'
 " [6]
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher (a lot
 " faster than grep)
+
+
 if executable('ag')
   " Use Ag over Grep
   set grepprg=ag\ --nogroup\ --nocolor
@@ -84,12 +87,15 @@ Plugin 'tpope/vim-unimpaired'
 " [12] Emmet
 Plugin 'mattn/emmet-vim'
 
+" [13] Gruvbox theme
+Plugin 'morhetz/gruvbox'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
-"filetype plugin on
 "
+"filetype plugin on
 " Brief help
 " :PluginList       - lists configured plugins
 " :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
@@ -110,7 +116,8 @@ map <silent> <C-n> :NERDTreeToggle<cr>
 au BufNewFile,BufRead *.twig set ft=jinja "Syntax highlight twig files
 
 " [4] 
-silent! colorscheme blanco
+silent! colorscheme desertink 
+let g:gruvbox_contrast_dark = 'hard'
 " set guifont=Menlo\ Regular:h16 
 " Override cursor bar color (light gray background)
 "hi CursorLine cterm=NONE ctermbg=white 

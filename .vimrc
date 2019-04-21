@@ -99,7 +99,7 @@ set synmaxcol=2500             " Limit syntax highlighting (this
 set tabstop=4                  " ┐
 set softtabstop=4              " │ Set global <TAB> settings
 set shiftwidth=4               " │ http://vimcasts.org/e/2
-set expandtab                  " ┘
+set noexpandtab                  " ┘
 
 set ttyfast                    " Enable fast terminal connection
 set undodir=~/.vim/undos       " Set directory for undo files
@@ -119,6 +119,8 @@ set wildmenu                   " Enable enhanced command-line
 
 set winminheight=0             " Allow windows to be squashed
 
+
+set wildignore+=*.o
 " Quicker window movement
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
