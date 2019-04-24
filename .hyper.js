@@ -141,7 +141,6 @@ module.exports = {
       'hyperterm-atom-dark',
       'hyperline',
       'hypercwd',
-      'hyperpower',
       'gitrocket',
   ],
 
