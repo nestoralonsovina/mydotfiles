@@ -141,6 +141,13 @@ let g:prettier#config#tab_width = 4
 let g:prettier#config#trailing_comma = 'es5'
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md Prettier
 
+" [10]
+" ale
+
+let g:ale_linters = {
+\	'python': ['pyflakes'],
+\}
+
 " [11]
 " Move single lines
 nmap <C-k> [e

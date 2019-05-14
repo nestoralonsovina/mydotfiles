@@ -1,11 +1,11 @@
 # Path to your oh-my-zsh installation
 export ZSH=/Users/nestoralonsovina/.oh-my-zsh
-export PATH="/Users/nestoralonsovina/anaconda/bin:$PATH"
+export PATH=/Applications/MAMP/bin/php/php7.3.1/bin/:/opt/local/bin:$HOME/.cargo/bin:$HOME/anaconda3/bin:$PATH
 export HISTSIZE=100000
 export HISTFILESIZE=100000
 export HISTFILE=~/.zhistory
 
-plugins=(git, vi-mode)
+plugins=(git, vi-mode, zsh-autocompletions)
 # Set name of the theme to load.
 ZSH_THEME="hyperzsh"
 # Hyphen-insensitive completion.
