@@ -1,6 +1,6 @@
 # Path to your oh-my-zsh installation
-export ZSH=/Users/nestoralonsovina/.oh-my-zsh
 export PATH=/Applications/MAMP/bin/php/php7.3.1/bin/:/opt/local/bin:$HOME/.cargo/bin:$HOME/anaconda3/bin:$PATH
+export ZSH=$HOME/.oh-my-zsh
 export HISTSIZE=100000
 export HISTFILESIZE=100000
 export HISTFILE=~/.zhistory
@@ -22,6 +22,8 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/.exports
 source $HOME/.functions
 
+
+plugins=(git, vi-mode)
 
 # shortcuts
 alias cd..="cd .."
