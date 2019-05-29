@@ -119,6 +119,7 @@ set wildmenu                   " Enable enhanced command-line
 
 set winminheight=0             " Allow windows to be squashed
 
+set tags = tags
 
 set wildignore+=*.o
 " Quicker window movement
