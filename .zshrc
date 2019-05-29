@@ -5,7 +5,6 @@ export HISTSIZE=100000
 export HISTFILESIZE=100000
 export HISTFILE=~/.zhistory
 
-plugins=(git, vi-mode, zsh-autocompletions)
 # Set name of the theme to load.
 ZSH_THEME="hyperzsh"
 # Hyphen-insensitive completion.
@@ -22,8 +21,7 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/.exports
 source $HOME/.functions
 
-
-plugins=(git, vi-mode)
+plugins=(git, vi-mode, zsh-autocompletions)
 
 # shortcuts
 alias cd..="cd .."
@@ -33,3 +31,6 @@ alias l='ls -la'
 
 plugins=(git, zsh-256color, tmux, osx, docker, zsh-syntax-highlighting)
 export PATH="/usr/local/opt/ruby/bin:$PATH"
+
+# Load brew configuration file
+source $HOME/.brewconfig.zsh
