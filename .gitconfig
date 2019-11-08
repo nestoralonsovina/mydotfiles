@@ -1,0 +1,36 @@
+[user]
+	email = alonsovinanestor@gmail.com
+	name = Néstor Alonso Viña
+
+[color]
+	diff = auto
+	status = auto
+	ui = auto
+
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red
+	new = green
+
+[url "https://github.com/"]
+	insteadOf = gh:
+
+[alias]
+	cob = checkout -b
+	i = init
+	s = status
+	p = push
+	a = add
+	c = commit -am
+	b = branch
+
+	ra = remote add
+	po = push origin
+	pm = "!git push -u origin master"
+	co = checkout
+
+	pom = push origin master
+
+[push]
+	default = simple
