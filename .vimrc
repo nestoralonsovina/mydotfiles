@@ -122,9 +122,21 @@ set winminheight=0             " Allow windows to be squashed
 set tags=tags
 
 set wildignore+=*.o
+
+" Change cursor on insert mode
+let &t_SI = "\e[3 q"
+let &t_EI = "\e[2 q"
+
+" Change cursor on visual mode
+let &t_SV = "\e[6 q"
+let &t_EV = "\e[2 q"
+
 " Quicker window movement
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
+
+" Go to previous buffer
+nnoremap :bp <C-b>
 
 " Load up all of our plugins
 if filereadable(expand("~/.vimrc.bundles"))

@@ -1,5 +1,5 @@
 [user]
-	email = alonsonestor20@gmail.com
+	email = alonsovinanestor@gmail.com
 	name = Néstor Alonso Viña
 
 [color]
@@ -34,3 +34,5 @@
 
 [push]
     default = simple
+[core]
+	autocrlf = input
